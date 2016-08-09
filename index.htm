@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://miami.venturehive.com/ -->
+<html lang="en" class=" js no-touch"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+
+
+
+
+<!-- Disable IE Compatibility mode -->
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="Venture Hive BeeKeeper(TM)">
+<meta name="author" content="Venture Hive LLC">
+
+<link rel="shortcut icon" href="http://venturehive-public.s3.amazonaws.com/site-settings/vh-favicon_9abf0682-f3c6-4432-8e59-d212d6d08319.png">
+
+
+
+    
+
+<!--  TODO i18n. Add to resources -->
+<title>Venture Hive Miami</title>
+
+<!-- start: CSS -->
+<link rel="stylesheet" type="text/css" href="./Venture Hive Miami_files/fullcalendar.css">
+<link rel="stylesheet" type="text/css" href="./Venture Hive Miami_files/style.css">
+<link rel="stylesheet" type="text/css" href="./Venture Hive Miami_files/font-awesome.min.css">
+
+<!-- start: Amaretti Dashboard CSS -->
+<link rel="stylesheet" type="text/css" href="./Venture Hive Miami_files/nanoscroller.css">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="./Venture Hive Miami_files/style(1).css" type="text/css">
+<link rel="stylesheet" href="./Venture Hive Miami_files/vh.css" type="text/css">
+
+<style type="text/css">
+    
+
+
+
+
+
+
+
+
+
+
+/* Top Navbar */
+.am-top-header {
+  background-color: #00addb;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: #00addb;
+  color: #ffffff;
+}
+
+/* Links */
+a:hover,
+a:focus {
+  color: #00addb;
+}
+
+/* Drop downs */
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #00addb;
+}
+
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:active {
+  color: #00addb;
+}
+
+.am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-notifications .am-scroller > .content > ul > li.active,
+.am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-messages .am-scroller > .content > ul > li.active {
+    background-color: #00addb19;
+    border-bottom: 1px solid #00addb19;
+}
+.am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-notifications .am-scroller > .content > ul > li:hover,
+.am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-messages .am-scroller > .content > ul > li:hover {
+  background-color: #00addb;
+}
+.am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-notifications .am-scroller > .content > ul > li:hover > a,
+.am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-messages .am-scroller > .content > ul > li:hover > a {
+  color: #ffffff;
+}
+.am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-notifications .am-scroller > .content > ul > li:hover > a .logo,
+.am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-messages .am-scroller > .content > ul > li:hover > a .logo {
+  background-color: #00addb;
+}
+.am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-notifications .am-scroller > .content > ul > li:hover > a .logo .icon,
+.am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-messages .am-scroller > .content > ul > li:hover > a .logo .icon {
+  color: #ffffff;
+}
+.am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-notifications .am-scroller > .content > ul > li:hover > a .user-content .circle,
+.am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-messages .am-scroller > .content > ul > li:hover > a .user-content .circle {
+  background: #ffffff;
+}
+.am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-notifications .am-scroller > .content > ul > li:hover > a .user-content .text-content,
+.am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-messages .am-scroller > .content > ul > li:hover > a .user-content .text-content,
+.am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-notifications .am-scroller > .content > ul > li:hover > a .user-content .date,
+.am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-messages .am-scroller > .content > ul > li:hover > a .user-content .date {
+  color: #ffffff;
+}
+
+/* Nav */
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #00addb;
+  border-color: #00addb;
+}
+
+/* Icons, Panel Heading, Tools */
+.panel-heading .tools .icon:hover {
+  color: #00addb;
+}
+
+.widget > .widget-head .tools > .icon:hover {
+  color: #00addb;
+}
+
+/* VH Classes */
+.vh-hero
+{
+    background: transparent url(/assets/img/vh/venturehive_banner.png) no-repeat 0% 0%;
+}
+
+.modal.colored-header .modal-content .modal-header, .md-modal.colored-header .modal-content .modal-header, .modal.colored-header .md-content .modal-header, .md-modal.colored-header .md-content .modal-header {
+    background-color: #00addb;
+    color:
+}
+
+.collapse, .navbar-collapse {
+    background-color: #00addb;
+}
+
+@media (max-width: 767px) {
+    .am-left-sidebar .am-logo {
+    background: url("/assets/img/vh/smaller.png") no-repeat 15px center;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+  .am-left-sidebar .am-logo {
+    background-image: url("/assets/img/vh/smaller.png");
+  }
+}
+
+.navbar-header {
+     background-color: #00addb;
+}
+
+.btn-link {
+  color: #2a2728;
+}
+
+.btn-primary {
+  background-color: #00addb;
+  border-color: #00addb;
+}
+
+/* BUTTONS PRIMARY */
+.btn-primary {
+  border-color: #00addb;
+  background-color:#00addb;
+  border-color: #00addb;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  background-color: #00addb;
+  border-color: #00addb;
+}
+.btn-primary:hover {
+  background-color: #00addb;
+  border-color: #00addb;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-color: #00addb;
+  border-color: #00addb;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  background-color: #00addb;
+  border-color: #00addb;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #00addb;
+  border-color: #00addb;
+}
+.btn-primary .badge {
+  color: #00addb;
+  background-color: #ffffff;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  background-color: #00addb;
+  border-color: #00addb;
+}
+.btn-primary:hover {
+  background-color: #00addb;
+  border-color: #00addb;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-color: #00addb;
+  border-color: #00addb;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  background-color: #00addb;
+  border-color: #00addb;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #00addb;
+  border-color: #00addb;
+}
+.btn-primary .badge {
+  color: #00addb;
+  background-color: #ffffff;
+}
+
+.bg-primary {
+  background-color: #2a2728;
+}
+a.bg-primary:hover,
+a.bg-primary:focus {
+  background-color: #00addb;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  background-color: #2a2728;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #ffffff;
+  border-color: #2a2728;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #ffffff;
+  background-color: #2a2728;
+}
+.navbar-default {
+  background-color: #2a2728;
+  border-color: #2a2728;
+}
+
+/* Tabs */
+.nav-tabs > li a:hover {
+    background: transparent;
+    color: #00addb;
+}
+
+/* Pagination */
+.currentStep {
+    color: #ffffff;
+    background-color: #00addb;
+}
+</style>
+<!-- end: CSS -->
+<!-- start: JavaScript-->
+
+<script type="text/javascript" async="" src="./Venture Hive Miami_files/ga.js"></script><script src="./Venture Hive Miami_files/jquery.min.js" type="text/javascript"></script>
+
+
+<script src="./Venture Hive Miami_files/modernizr.custom.js"></script>
+<script src="./Venture Hive Miami_files/jquery.flexslider.js"></script>
+<script src="./Venture Hive Miami_files/jquery.cslider.js"></script>
+<script src="./Venture Hive Miami_files/vh.js"></script>
+
+<!-- Show the support and suggestions tab only if we are logged in -->
+
+
+<!-- end: JavaScript-->
+
+
+
+    <script type="text/javascript">
+        <!--//--><![CDATA[//><!--
+        var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-47827522-4"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+        //--><!]]>
+    </script>
+
+
+
+
+<!-- We always have to have the user and user profile modals available because they are in the top navbar -->
+<!-- start: Create User Modal Dialog -->
+    <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;box-sizing: content-box;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head><body><div class="modal fade colored-header" id="createUserDlg">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><img src="./Venture Hive Miami_files/user.svg" id="" style="height:32px;" title="" class="icon-white"> Create User<button type="button" class="close" data-dismiss="modal">×</button></h3>
+            </div>
+            <form class="vh-loader-form vh-modal-content" action="http://miami.venturehive.com/user/save" method="post" onsubmit="return true">
+            <div class="modal-body">
+                <fieldset>
+                    <div id="create-user-form"></div>
+                </fieldset>
+            </div>
+            <div class="modal-footer">
+                <button id="save_btn" type="submit" name="_action_save" class="btn btn-primary vh-loader-btn" data-loading-text="Saving...">
+                    Save
+                </button>
+                <button class="btn btn-default" onclick="location.href=&#39;#users&#39;;location.reload();" data-dismiss="modal">
+                    Cancel
+                </button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </div>
+  <!-- end: Create User Modal Dialog -->
+  <!-- start: Show User Modal Dialog -->
+    <div class="modal fade colored-header" id="showUserDlg">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><img src="./Venture Hive Miami_files/user.svg" id="" style="height:32px;" title="" class="icon-white"> Account<button type="button" class="close" data-dismiss="modal">×</button></h3>
+            </div>
+            <div class="vh-modal-content">
+                <div class="panel-body modal-body">
+                <form>
+                    <fieldset>
+                        <div id="show-user-form"></div>
+                    </fieldset>
+                    <div class="form-actions">
+                        <button class="btn" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+  <!-- end: Show User Modal Dialog -->
+  <!-- start: Edit User Modal Dialog -->
+    <div class="md-modal colored-header custom-width md-effect-9 modal fade" id="editUserDlg">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><img src="./Venture Hive Miami_files/user.svg" id="" style="height:32px;" title="" class="icon-white"> Account<button type="button" class="close" data-dismiss="modal">×</button></h3>
+            </div>
+            <form class="vh-loader-form vh-modal-content" action="http://miami.venturehive.com/user/update" method="post">
+            <div class="modal-body">
+                <fieldset>
+                    <div id="edit-user-form"></div>
+                </fieldset>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" name="_action_update" class="btn btn-primary vh-loader-btn" data-loading-text="Saving...">
+                    Save
+                </button>
+                <!-- TODO: Don't specify location.href=#companies if it doesn't apply for the user -->
+                <button class="btn btn-default md-close" onclick="location.href=&#39;location.reload();" data-dismiss="modal">
+                    Cancel
+                </button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </div>
+  <!-- end: Edit User Modal Dialog -->
+
+<!-- This is the code that checks for matching password on the client before submitting -->
+<script>
+    function star() {
+        document.getElementById('asterisk1').innerHTML="*";
+        document.getElementById('asterisk2').innerHTML="*";
+    }
+    function checkPass() {
+        var pass1 = document.getElementById('password1');
+        var pass2 = document.getElementById('password2');
+        var message = document.getElementById('confirmMessage');
+        if (pass1.value != pass2.value)
+        {
+            message.style.color = "#8B0000";
+            message.innerHTML = "Passwords do not match!";
+            document.getElementById("save_btn").disabled = true;
+        }else
+        {
+            document.getElementById("save_btn").disabled = false;
+            message.innerHTML = "";
+        }
+    }
+</script>
+    <!-- start: Show Profile Modal Dialog -->
+    <div class="md-modal colored-header custom-width md-effect-9 modal fade" id="showProfileDlg">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><img src="./Venture Hive Miami_files/user.svg" id="" style="height:32px;" title="" class="icon-white"> Show Profile<button type="button" class="close" data-dismiss="modal">×</button></h3>
+            </div>
+            <div class="vh-modal-content">
+                <div class="panel-body modal-body">
+                <form>
+                    <fieldset>
+                        <div id="show-profile-form"></div>
+                    </fieldset>
+                </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default md-close" onclick="location.href=&#39;#users&#39;" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+  <!-- end: Show Profile Modal Dialog -->
+  <!-- start: Edit Profile Modal Dialog -->
+    <div class="md-modal colored-header custom-width md-effect-9 modal fade" id="editProfileDlg">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><img src="./Venture Hive Miami_files/user.svg" id="" style="height:32px;" title="" class="icon-white"> Edit Profile<button type="button" class="close" data-dismiss="modal">×</button></h3>
+            </div>
+            <form class="vh-loader-form vh-modal-content" action="http://miami.venturehive.com/userProfile/update" method="post" enctype="multipart/form-data">
+            <div class="modal-body">
+                <fieldset>
+                    <div id="edit-profile-form"></div>
+                </fieldset>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" name="_action_update" class="btn btn-primary vh-loader-btn" data-loading-text="Saving...">
+                    Save
+                </button>
+                <button class="btn btn-default md-close" onclick="location.href=&#39;location.reload();" data-dismiss="modal">
+                    Cancel
+                </button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </div>
+  <!-- end: Edit User Modal Dialog -->
+
+
+
+
+  
+
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top am-top-header">
+    <div class="container-fluid vh-header">
+
+        <!-- Navbar Header -->
+        <div class="navbar-header">
+
+            
+                
+            
+
+            <!-- Page title - visible on mobile -->
+            
+            <div class="page-title" style="display: inline-block;">
+            
+            
+                <!-- TODO: BK2 Load client logo here! -->
+                
+                <a href="http://miami.venturehive.com/"><span><img src="./Venture Hive Miami_files/smaller.png" alt="logo" width="229px" class="logo-img"></span></a>
+            </div>
+
+            
+
+            <!-- Brand Logo, 80 by 80 please -->
+            <a href="http://miami.venturehive.com/" class="navbar-brand"><img src="./Venture Hive Miami_files/vh-badge_75ff35d7-c8de-4f2a-a8a0-8e5e862dbb2f.png" height="80px" width="80px" style="margin-left: -.4em;"></a>
+        </div>
+
+        <!-- Right sidebar toggle button -->
+        <!-- NOTHING HERE FOR NOW -->
+        
+            
+        
+
+        <!-- Navbar collapse toggle button - visible on mobile -->
+        <a href="http://miami.venturehive.com/#" data-toggle="collapse" data-target="#am-navbar-collapse" class="am-toggle-top-header-menu collapsed">
+            <img src="./Venture Hive Miami_files/angle-down.svg" id="" style="height:31px;" title="" class="icon icon-white">
+        </a>
+
+        <!-- Navbar collapse - This will be hidden by default on mobile -->
+        <div id="am-navbar-collapse" class="collapse navbar-collapse">
+            
+
+            <!-- Left Menu -->
+            
+
+<div class="nav navbar-nav am-nav-right">
+    <!-- CONNECT WITH US (IF SPECIFIED IN SETTINGS) -->
+    
+    <!-- RENDER OPTIONAL MENU ITEMS -->
+    
+    
+        
+            <li><a href="https://www.venturehive.com/">Venture Hive Home</a></li>
+        
+    
+        
+            <li><a href="https://blog.venturehive.com/"> Blog</a></li>
+        
+    
+        
+            <li><a href="https://apply.venturehive.com/miami"> Apply</a></li>
+        
+    
+    <!-- EVENTS -->
+    <li><a href="http://miami.venturehive.com/events">Events</a></li>
+    <!-- DIRECTORY -->
+    
+        <li><a href="http://miami.venturehive.com/directory">Directory</a></li>
+    
+    <!-- CONTACT -->
+    <li><a href="http://miami.venturehive.com/contact">Contact us</a></li>
+    <!-- REGISTRATION (IF SPECIFIED IN SETTINGS) -->
+    
+    <!-- LOGIN -->
+    <li><a href="http://miami.venturehive.com/login">Login</a></li>
+</div>
+
+
+            
+        </div>
+
+    </div>
+</nav>
+
+  
+
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="./Venture Hive Miami_files/vh-slider.css" media="screen">
+    <link type="text/css" id="base-style" href="./Venture Hive Miami_files/style-slider.css" rel="stylesheet">
+
+    <style>
+.da-dots {
+    display:none;
+}
+</style>
+
+<div id="da-slider" class="da-slider da-slider-fb" style="height:350px;background:linear-gradient(rgba(0, 54, 103, 0.6), rgba(0, 54, 103, 0.6)), url(&#39;https://miami.venturehive.com/assets/img/vh/venturehive_banner.png&#39;) repeat 0% 0%;">
+	<div class="da-slide da-slide-current">
+		<h2 style="top:25px;">Entrepreneurship Education for Growth</h2>
+		<p style="top:105px;height:216px;">
+Most startups fail when making the transition from startup to scale up -  teams need to develop at a faster rate than their businesses. Venture Hive focuses on building individuals who can lead and execute with a global mindset.</p>
+	</div>
+<nav class="da-dots"><span class="da-dots-current"></span></nav></div>
+
+<script type="text/javascript">
+			$(function() {
+				$('#da-slider').cslider({
+					autoplay	: true,
+					bgincrement	: 450
+				});
+			});
+</script>
+
+
+
+
+<!-- /#Header -->  
+
+
+
+<!-- Start Center -->
+<div id="wrapper">
+	<div class="container-fluid">
+		<div class="row">
+			<!-- Center Content -->
+			<div id="first-time">
+
+                <style>
+.header h1{
+  font-weight: 500;
+}
+
+.icon-box {
+  padding: 50px 80px;
+  background-color: #ffffff;
+}
+
+.ventures {
+  padding: 50px 70px;
+}
+
+.ventures h2 {
+  font-weight: 500;
+}
+
+.features{
+  padding: 70px;
+  background-color: #ffffff;
+}
+
+.features h2 {
+  color:#00ADDB;
+  text-align: center;
+}
+
+.features ul>li {
+  padding-bottom: 8px;
+}
+
+.features ol{
+  list-style-type: circle;
+}
+
+</style>
+
+<div class="col-sm-12" style="background-color:white;text-align: center; padding:50px;">
+  <div class="header">
+    <h1>2016 Miami Accelerator Industry Verticals</h1>
+  </div>
+</div>
+
+<div class="row text-center icon-box">
+  <div class="col-md-12">
+    <!-- start: Icon Box Start -->
+      <div class="row">
+            <div class="col-md-4 col-md-offset-2">
+              <div class="panel-default">
+                  <div class="panel-head" style="color:#00ADDB;">
+                      <i class="s7-plane gl-4x"></i>
+                  </div>
+                  <div class="panel-body">
+                    <h3>Hospitality/Tourism IT</h3>
+                    <p>With all its hotels, restaurants, bars and nightlife, what better place than Miami to start and grow a tech startup in the hospitality and tourism industry?</p>
+                  </div>
+              </div>    
+            </div>
+            <div class="col-md-4">
+                <div class="panel-default">
+                  <div class="panel-head" style="color:#00ADDB;">
+                        <i class="s7-light gl-4x"></i>
+                  </div>
+                  <div class="panel-body">
+                      <h3>Creative IT</h3>
+                      <p>Art Basel has put Miami on the map as a world wide capital for the arts. We welcome tech startups that bring technology innovation to the fashion, design, music, arts, photography, video, and news industries.</p>
+                  </div>
+                </div>
+            </div>
+      </div>
+    <!-- end: Icon Box-->
+
+    <!-- start: Icon Box Start -->  
+      <div class="row">
+            <div class="col-md-4">
+                <div class="panel-default">
+                  <div class="panel-head" style="color:#00ADDB;">
+                      <i class="s7-piggy gl-4x"></i>
+                  </div>
+                  <div class="panel-body">
+                    <h3>Financial Tech</h3>
+                    <p>Financial technologies (FinTech) focused on unbanked and underbanked populations, remittances, and other solutions for the financial services industry will find Miami is the perfect place to access LATAM and US opportunities.</p>
+                  </div>
+                </div>  
+            </div>
+            <div class="col-md-4">
+              <div class="panel-default">
+                  <div class="panel-head" style="color:#00ADDB;">
+                      <i class="s7-map-2 gl-4x"></i>
+                  </div>
+                  <div class="panel-body">
+                    <h3>Trade/Logistics IT</h3>
+                    <p>Miami-Dade is one of the major international trade locations for the U.S. as well as the major gateway to the Americas for domestic and international businesses.  The metropolitan area has multiple, world-class trade facilities, networks of intermodal infrastructure, along with supportive leadership committed to the area’s continued freight success.</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel-default">
+                  <div class="panel-head" style="color:#00ADDB;">
+                      <i class="s7-bandaid gl-4x"></i>
+                  </div>
+                  <div class="panel-body">
+                    <h3>Healthcare IT</h3>
+                    <p>South Florida has a high density of hospitals and other healthcare providers. A great market to come to for tech startups that build software for the healthcare ecosystem.</p>
+                  </div>
+              </div>
+            </div>
+      </div>
+    <!-- end: Icon Box-->    
+  </div>
+</div>
+
+
+<div class="row text-center ventures">
+  <div class="col-md-12">
+      <div class="panel-default" style="padding-top:20px;">
+          <div class="panel-head">
+              <h2>Venture Hive® Miami Accelerator:</h2>
+              <h3>The Next Generation Of Accelerators In The Heart Of The Magic City.</h3>
+          </div>
+          <div class="panel-body">
+          <p>Miami has the resources and Venture Hive® offers the support you need to scale your business! The Venture Hive® Miami Accelerator program spans 12 weeks, during which 10 teams work full-time on creating a scalable business model for their technology startup. Miami Accelerator Applications <a href="http://apply.venturehive.com/miami" style="font-size: 13.3333px;">are currently closed.</a>
+          </p>
+          </div>
+      </div>
+
+      <div class="panel-default" style="padding-top:20px;">
+          <div class="panel-head">
+              <h2>Venture Hive® Miami Incubator:</h2>
+              <h3>Mentoring And Services Any Time Of Year</h3>
+          </div>
+          <div class="panel-body">
+          <p>For startups outside of our targeted industry verticals or for those that can't wait for the next Miami Accelerator class to start, you may apply to be considered for our incubator. Miami Incubator <a href="http://apply.venturehive.com/miami">applications are currently open.</a></p>
+          </div>
+      </div>
+
+      <div class="panel-default" style="padding-top:20px;padding-bottom:20px;">
+          <div class="panel-head">
+              <h2>Venture Hive® Prep:</h2>
+              <h3> Top Quality Entrepreneurship Education at the High School Level</h3>
+          </div>
+          <div class="panel-body">
+          <p>For Students: Mindset shifting for K-12 students, creating problem solvers. Development through programming including 1 to 4 week camps, after school programs, and full time high school programs. For School Systems: Training, content, platform, and ongoing support to give your students unparalleled educational resources and opportunities.
+          </p>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- end: Mid-Section -->
+
+<div class="row features">
+  <div class="col-md-12">
+
+      <div class="col-md-4">
+        <div class="panel-default">
+            <div class="panel-head">
+                <h2>The Business</h2>
+            </div>
+            <div class="panel-body">
+                <p>The Venture Hive Accelerator supports big, disrupt-the-industry visions:</p>
+            
+                <ul>
+                  <li>The business is an innovative web or mobile technology solution applied to one of the five following industries:
+                    <ol>
+                      <li>Creatives (art, design, music, photography, etc.)</li><li>FinTech</li><li>Healthcare IT</li>
+                      <li>Hospitality &amp; Tourism IT</li>
+                      <li>Trade &amp; Logistics IT</li>
+                    </ol>
+                  </li>
+                  <li>The business has passed the idea phase, talking to early potential customers, have built an early version of your product, a WORKING SOLUTION.
+                  </li>
+                  <li>The company can be pre-revenue or just starting to generate its first revenue.</li>
+                  <li>The company can already have received external funding but no more than 500,000 USD.</li>
+                  <li>Having some form of intellectual capital ownership is a plus but not a requirement.</li>
+                </ul>
+
+                <p>We want your Accelerator experience to be focused on validation with customers and setting the foundation for scaling.&nbsp;
+                </p>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="panel-default">
+            <div class="panel-head">
+                <h2>The Benefits</h2>
+            </div>
+            <div class="panel-body">
+                <p>The accelerator is a founder-friendly organization with amazing benefits:</p>
+
+                <ul>
+                  <li>A grant of 25,000 USD from Miami-Dade County. <u>No equity taken in your company!</u></li>
+                  <li>A collaborative working space at our headquarters in Downtown Miami for up to six months, free of charge.</li>
+                  <li>Mentoring from a vetted network of world class local, national and international entrepreneurs and experts.</li>
+                  <li>Exposure to qualified investors.</li>
+                  <li>A top-notch curriculum of highly practical workshops and training sessions.</li>
+                  <li>And more awesome surprises...</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="panel-default">
+            <div class="panel-head">
+                <h2>The Teams</h2>
+            </div>
+            <div class="panel-body">
+              <p>Our program focuses on individual development. We want you to succeed so we established some guidelines based on what has worked with our companies:</p><p>
+              </p>
+
+              <ul>
+                <li>We only take teams of 2 to 4 founders with complementary backgrounds.</li>
+                <li>Teams must be committed to spending the first 12 weeks of the program full time in our accelerator space in downtown Miami during the acceleration program.</li>
+                <li>Founding team members must speak English.</li>
+              </ul>
+
+              <p>We place a great deal of importance on the team, on its solidity and on its ability to be coached and to take feedback.</p>
+            </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+<!-- end: Features -->
+
+                <!-- PROGRAM DESCRIPTION(S) -->
+                
+                
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- /#Start Center -->
+
+  
+  
+<!-- LRA: We had to add the core JS file in the head section for Ajax to work on page load -->
+<!--      The rest of the javascript libs are listed below                                  -->
+<script src="./Venture Hive Miami_files/jquery.nanoscroller.min.js" type="text/javascript"></script>
+<script src="./Venture Hive Miami_files/main.js" type="text/javascript"></script>
+<script src="./Venture Hive Miami_files/bootstrap.min.js" type="text/javascript"></script>
+<!-- TODO: BK2 Determine which of the following are required rather than putting them all in -->
+<script src="./Venture Hive Miami_files/fullcalendar.min.js"></script>
+<script src="./Venture Hive Miami_files/jquery.flot.js" type="text/javascript"></script>
+<script src="./Venture Hive Miami_files/jquery.flot.pie.js" type="text/javascript"></script>
+<script src="./Venture Hive Miami_files/jquery.flot.resize.js" type="text/javascript"></script>
+<script src="./Venture Hive Miami_files/jquery.flot.orderBars.js" type="text/javascript"></script>
+<script src="./Venture Hive Miami_files/curvedLines.js" type="text/javascript"></script>
+<script src="./Venture Hive Miami_files/jquery.sparkline.min.js" type="text/javascript"></script>
+<script src="./Venture Hive Miami_files/jquery-ui.min.js" type="text/javascript"></script>
+<script src="./Venture Hive Miami_files/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
+<script src="./Venture Hive Miami_files/jquery-jvectormap-us-merc-en.js" type="text/javascript"></script>
+<script src="./Venture Hive Miami_files/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
+<script src="./Venture Hive Miami_files/jquery-jvectormap-uk-mill-en.js" type="text/javascript"></script>
+<script src="./Venture Hive Miami_files/jquery-jvectormap-fr-merc-en.js" type="text/javascript"></script>
+<script src="./Venture Hive Miami_files/jquery-jvectormap-us-il-chicago-mill-en.js" type="text/javascript"></script>
+<script src="./Venture Hive Miami_files/jquery-jvectormap-au-mill-en.js" type="text/javascript"></script>
+<script src="./Venture Hive Miami_files/jquery-jvectormap-in-mill-en.js" type="text/javascript"></script>
+<script src="./Venture Hive Miami_files/jquery-jvectormap-map.js" type="text/javascript"></script>
+<script src="./Venture Hive Miami_files/jquery-jvectormap-ca-lcc-en.js" type="text/javascript"></script>
+
+
+<script src="./Venture Hive Miami_files/Chart.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="./Venture Hive Miami_files/jsapi"></script>
+
+    
+
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        //initialize the javascript
+        App.init();
+        
+        
+    });
+</script>
+
+  <!-- TODO: Put this copyright footer in a GSP -->
+  <div class="text-center" style="padding-top:20px;padding-bottom:20px;">
+    
+© 2016 Venture Hive® LLC
+  </div>
+
+<div class="am-scroll-top" style="display: none;"></div></body></html>
