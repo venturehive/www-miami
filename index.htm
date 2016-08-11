@@ -551,9 +551,9 @@ a.bg-primary:focus {
     
     
         
-            <li><a href="https://www.venturehive.com/">Venture Hive Home</a></li>
+          <!-- <li><a href="https://www.venturehive.com/">Venture Hive Home</a></li> -->
     
-            <li><a href="https://apply.venturehive.com/miami" style="text-decoration:underline; color:#051e8d;"> <strong>Apply Now</strong></a></li>
+            <li><a href="https://apply.venturehive.com/miami" style=" color:#fff; background-color: rgba(255, 255, 255, 0.47);"> <strong>Apply Now</strong></a></li>
         
     
     <!-- EVENTS -->
@@ -580,9 +580,6 @@ a.bg-primary:focus {
   
 
 
-
-
-
     <link rel="stylesheet" type="text/css" href="assets/css/vh-slider.css" media="screen">
     <link type="text/css" id="base-style" href="assets/css/style-slider.css" rel="stylesheet">
 
@@ -594,10 +591,10 @@ a.bg-primary:focus {
 
 <div id="da-slider" class="da-slider da-slider-fb" style="height:350px;background:linear-gradient(rgba(0, 54, 103, 0.6), rgba(0, 54, 103, 0.6)), url(&#39;https://miami.venturehive.com/assets/img/vh/venturehive_banner.png&#39;) repeat 0% 0%;">
 	<div class="da-slide da-slide-current">
-		<h2 style="top:25px;">Entrepreneurship Education for Growth</h2>
-		<p style="top:105px;height:216px;">
-    Venture Hive focuses on building individuals who can lead and execute with a global mindset. 
-    </p>
+      		<h2 style="top:25px;">Entrepreneurship Education for Growth</h2>
+      		<p style="top:105px;height:216px;">
+          Venture Hive focuses on building individuals who can lead and execute with a global mindset. 
+          </p>
 	</div>
 <nav class="da-dots"><span class="da-dots-current"></span></nav></div>
 
@@ -644,6 +641,21 @@ a.bg-primary:focus {
   background-color: #ffffff;
 }
 
+.btn-apply {
+  width: 19%;
+  margin-top:10px;
+  padding:10px;
+}
+
+.btn-apply a {
+    color: #fff; 
+}
+
+.btn-apply a:visited {
+    color: #ffffff; 
+}
+
+
 .ventures {
   padding: 50px 70px;
 }
@@ -670,9 +682,36 @@ a.bg-primary:focus {
   list-style-type: circle;
 }
 
+.weekly{
+  padding: 0 100px;
 }
 
-@media screen and (min-width: 320px){
+.weekly img {
+  margin: 0 auto;
+  display: block;
+}
+
+.weekly p {
+  text-align: center;
+}
+
+.weeks {
+  padding: 30px 0;
+  text-align: left;
+}
+
+.weeks li {
+  list-style-type: none;
+}
+
+.pricing {
+  padding: 0 100px;
+}
+
+
+}
+
+@media screen and (min-width: 768px){
 
 }
 
@@ -692,7 +731,7 @@ a.bg-primary:focus {
             <div class="col-md-4 col-md-offset-2">
               <div class="panel-default">
                   <div class="panel-head" style="color:#00ADDB;">
-                      <img src="assets/img/light.svg" width="120" height="120">
+                      <img src="assets/img/light.svg"  width="120" height="120">
                   </div>
                   <div class="panel-body">
                     <h3>Idea to MVP</h3>
@@ -757,21 +796,29 @@ a.bg-primary:focus {
                 <h2>What We Offer</h2>
             </div>
             <div class="panel-body">
-               
-                <ul>
-                  <li>12-week mini-MBA focused on your business using our proven curriculum for entrepreneurs</li>
-                  <li>Weekly one-on-one mentoring sessions that provide accountability, goal setting, and suggestions from someone who’s been there—this is where the magic happens</li>
-                  <li>Weekly stand-up meetings with other startups</li>
-                  <li>Free consultation with lawyers, accountants, and other specialists</li>
-                  <li>Plug into our growing network of talented entrepreneurs, mentors, and investors</li>
-                  <li>Speakers with real-world experience who are experts at what they do and can help you get where you’re going </li>
-                  <li>We’ll help you refine your business model</li>
-                  <li>We’ll get your pitch deck to sing</li>
-                  <li>Our “Swarm” demo day will put you in front of investors and influencers in the Miami business community</li>
-                  <li>We’ll make the right intros for you whenever we can</li>
-                </ul>
+
+                <div class="col-md-6"> 
+                  <ul>
+                      <li>12-week mini-MBA focused on your business using our proven curriculum for entrepreneurs</li>
+                      <li>Weekly one-on-one mentoring sessions that provide accountability, goal setting, and suggestions from someone who’s been there—this is where the magic happens</li>
+                      <li>Weekly stand-up meetings with other startups</li>
+                      <li>Free consultation with lawyers, accountants, and other specialists</li>
+                        <li>Plug into our growing network of talented entrepreneurs, mentors, and investors</li>
+                  </ul>
+                </div>
+
+                <div class="col-md-6"> 
+                  <ul>
+                      <li>Speakers with real-world experience who are experts at what they do and can help you get where you’re going </li>
+                      <li>We’ll help you refine your business model</li>
+                      <li>We’ll get your pitch deck to sing</li>
+                       <li>Our “Swarm” demo day will put you in front of investors and influencers in the Miami business community</li>
+                      <li>We’ll make the right intros for you whenever we can</li>
+                  </ul>
+                </div>
+
             </div>
-              <a class="btn btn-primary center-block" href="https://apply.venturehive.com/content/venture-hive-application-form" role="button" style="color:#fff; padding:10px;">Apply Now</a>
+              <a class="btn btn-primary center-block btn-apply" href="https://apply.venturehive.com/content/venture-hive-application-form" role="button">Apply Now</a>
         </div>
       </div>
 
@@ -792,7 +839,7 @@ a.bg-primary:focus {
               <form style="padding:30px 0;">
                 <div class="form-group">
                   <label for="exampleInputEmail1">Write us your email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="JohnDoe@gmail.com">  <button type="submit" class="btn btn-default">Stay informed</button>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="JohnDoe@gmail.com">  <button type="submit" class="btn btn-default" style="padding: 11px; margin-top:-4px;">Stay informed</button>
                 </div>
                
               </form>
@@ -806,28 +853,43 @@ a.bg-primary:focus {
 <div class="row features" style="background-color:#fff; padding:40px;">
   <div class="col-md-12">
     <div class="col-xs-12">
-        <div class="panel-default">
-            <div class="panel-head">
+        <div class="panel-default weekly">
+            <div class="panel-head center-block">
+                <img src="assets/img/calendar.svg" width="120" height="120">
                 <h2>Weekly Schedule</h2>
             </div>
             <div class="panel-body">
                 <p>Weekly mentoring session: We’ll use your first mentoring session to map out your OKRs (objectives and key results) for the next three months. These cover your goals and the metrics you’ll use to measure your progress. </p>
                 <p>Each week’s curriculum will focus on a particular aspect of your startup. Here’s an outline we’ve used in the past: </p>
 
-                <ul>
-                  <li><strong>Week 1:</strong> Orientation </li>
-                  <li><strong>Week 2: </strong>Finance </li>
-                  <li><strong>Week 3:</strong>Product and Pricing </li>
-                  <li><strong> Week 4:</strong> Sales and Strategic Partnerships </li>
-                  <li><strong> Week 5:</strong>  Key Performance Indicators </li>
-                  <li><strong> Week 6: </strong>Digital Marketing  </li>
-                  <li><strong>Week 7: </strong>Legal & Intellectual Property </li>
-                  <li><strong> Week 8: </strong>Culture & Human Resources </li>
-                  <li><strong> Week 9: </strong>Marketing</li>
-                  <li><strong>Week 10: </strong>Executive Development </li>
-                  <li><strong> Week 11: </strong> Public Relations </li>
-                  <li><strong> Week 12: </strong>Funding Strategy </li>
-                </ul>
+                 <div class="col-md-4"> 
+                  <ul class="weeks">
+                      <li><strong>Week 1:</strong> Orientation </li>
+                      <li><strong>Week 2: </strong>Finance </li>
+                      <li><strong>Week 3:</strong>Product and Pricing </li>
+                      <li><strong> Week 4:</strong> Sales and Strategic Partnerships </li>
+                  </ul>
+                </div>
+
+                 <div class="col-md-4"> 
+                  <ul class="weeks">
+                      <li><strong> Week 5:</strong>  Key Performance Indicators </li>
+                      <li><strong> Week 6: </strong>Digital Marketing  </li>
+                      <li><strong>Week 7: </strong>Legal & Intellectual Property </li>
+                      <li><strong> Week 8: </strong>Culture & Human Resources </li>
+                  </ul>
+                </div>
+
+                 <div class="col-md-4"> 
+                  <ul class="weeks">
+                      <li><strong> Week 9: </strong>Marketing</li>
+                      <li><strong>Week 10: </strong>Executive Development </li>
+                      <li><strong> Week 11: </strong> Public Relations </li>
+                      <li><strong> Week 12: </strong>Funding Strategy </li>
+                  </ul>
+                </div>
+               
+
                 
                 <p>Bi-weekly pitch practice Sessions (six times throughout the program) </p>
                 <p>Bi-weekly office hours with attorneys and accountants</p>
@@ -844,20 +906,23 @@ a.bg-primary:focus {
 <!-- start: Details and Pricing -->
 <div class="row" style="padding:40px;">
   <div class="col-md-12">
-    <div class="col-xs-12">
-        <div class="panel-default">
+    <div class="col-xs-12 pricing">
+        <div class="panel-default text-center">
             <div class="panel-head" style="text-align:center; padding-bottom:10px;">
+                <img src="assets/img/pricing.svg" width="120" height="120">
                 <h2>Details and Pricing</h2>
             </div>
             <div class="panel-body">
                 <p>All applications for the Fall 2016 Accelerator Program are due by midnight on Sunday, September 4th. </p>
-                <p><strong>Virtual Accelerator:</strong>Learn remotely using our library of world-class online content. If you’re in the Miami area you’re welcome to join us at our offices for weekly mentoring sessions and standup meetings. Selected companies can either pay $5,000 up front or $1,800/month for all benefits. </p>
+                <p><strong>Virtual Accelerator</strong></p>
+                <p>Learn remotely using our library of world-class online content. If you’re in the Miami area you’re welcome to join us at our offices for weekly mentoring sessions and standup meetings. Selected companies can either pay $5,000 up front or $1,800/month for all benefits. </p>
                 
-                <p><strong>Work from Our Offices:</strong>We invite you to move in! You’ll be in the middle of the infectious energy of our startups. We provide an amazing space to network and grow. Our facility at 1010 NE 2nd Ave. in Downtown Miami is accessible easily by bus, Miami Trolley, and the "Eleventh Street" Metromover station right outside our door. Selected companies can pay in advance for all twelve weeks: $1,500 one-time payment for a shared workspace or $3,000 one-time for a private office. This is in addition to the fee for the Virtual Accelerator. </p>
+                <p><strong>Work from Our Offices</strong></p>
+                <p>We invite you to move in! You’ll be in the middle of the infectious energy of our startups. We provide an amazing space to network and grow. Our facility at 1010 NE 2nd Ave. in Downtown Miami is accessible easily by bus, Miami Trolley, and the "Eleventh Street" Metromover station right outside our door. Selected companies can pay in advance for all twelve weeks: $1,500 one-time payment for a shared workspace or $3,000 one-time for a private office. This is in addition to the fee for the Virtual Accelerator. </p>
 
                 <p>After the program, the monthly rate for access to non-private dedicated space is $500/month for the first person plus $250/month per additional person, or $1,250/month for a private office for up to four people. These prices include bi-weekly mentoring and other benefits.</p>
             </div>
-             <a class="btn btn-primary center-block" href="https://apply.venturehive.com/content/venture-hive-application-form" role="button" style="color:#fff; padding:10px; margin-top:10px;">Apply Now</a>
+             <a class="btn btn-primary center-block btn-apply" href="https://apply.venturehive.com/content/venture-hive-application-form" role="button">Apply Now</a>
           </div>  
       </div>
   </div>

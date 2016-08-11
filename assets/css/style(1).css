@@ -2728,9 +2728,10 @@ output {
   color: #777777;
 }
 .form-control {
-  display: block;
-  width: 100%;
+  display: inline;
+  width: 45%;
   height: 44px;
+  margin-left: 3px;
   padding: 8px 12px;
   font-size: 13px;
   line-height: 1.42857143;
