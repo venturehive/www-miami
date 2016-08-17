@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en" class=" js no-touch">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- Disable IE Compatibility mode -->
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="Venture Hive Miami">
+<meta name="author" content="Venture Hive LLC">
+
+<link rel="shortcut icon" href="/assets/img/vh-favicon.png">
+
+<!--  TODO i18n. Add to resources -->
+<title>Venture Hive Miami</title>
+
+<!-- start: CSS -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+
+<!-- start: Amaretti Dashboard CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/lib/stroke-7/style.css"/>
+<link rel="stylesheet" type="text/css" href="assets/css/nanoscroller.css">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+<link rel="stylesheet" href="assets/css/vh.css" type="text/css">
+
+<style type="text/css">
+    /* Top Navbar */
+    .am-top-header {
+      background-color: #00addb;
+    }
+
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:hover,
+    .navbar-default .navbar-nav > .open > a:focus {
+      background-color: #00addb;
+      color: #ffffff;
+    }
+
+    /* Links */
+    a:hover,
+    a:focus {
+      color: #00addb;
+    }
+
+    /* Drop downs */
+
+    .select2-container--default .select2-results__option--highlighted[aria-selected] {
+        background-color: #00addb;
+    }
+
+    .dropdown-menu > li > a:focus,
+    .dropdown-menu > li > a:active {
+      color: #00addb;
+    }
+
+    .am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-notifications .am-scroller > .content > ul > li.active,
+    .am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-messages .am-scroller > .content > ul > li.active {
+        background-color: #00addb19;
+        border-bottom: 1px solid #00addb19;
+    }
+    .am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-notifications .am-scroller > .content > ul > li:hover,
+    .am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-messages .am-scroller > .content > ul > li:hover {
+      background-color: #00addb;
+    }
+    .am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-notifications .am-scroller > .content > ul > li:hover > a,
+    .am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-messages .am-scroller > .content > ul > li:hover > a {
+      color: #ffffff;
+    }
+    .am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-notifications .am-scroller > .content > ul > li:hover > a .logo,
+    .am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-messages .am-scroller > .content > ul > li:hover > a .logo {
+      background-color: #00addb;
+    }
+    .am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-notifications .am-scroller > .content > ul > li:hover > a .logo .icon,
+    .am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-messages .am-scroller > .content > ul > li:hover > a .logo .icon {
+      color: #ffffff;
+    }
+    .am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-notifications .am-scroller > .content > ul > li:hover > a .user-content .circle,
+    .am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-messages .am-scroller > .content > ul > li:hover > a .user-content .circle {
+      background: #ffffff;
+    }
+    .am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-notifications .am-scroller > .content > ul > li:hover > a .user-content .text-content,
+    .am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-messages .am-scroller > .content > ul > li:hover > a .user-content .text-content,
+    .am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-notifications .am-scroller > .content > ul > li:hover > a .user-content .date,
+    .am-top-header .navbar-collapse .am-icons-nav > li.dropdown .am-messages .am-scroller > .content > ul > li:hover > a .user-content .date {
+      color: #ffffff;
+    }
+
+    /* Nav */
+    .nav .open > a,
+    .nav .open > a:hover,
+    .nav .open > a:focus {
+      background-color: #00addb;
+      border-color: #00addb;
+    }
+
+    /* Icons, Panel Heading, Tools */
+    .panel-heading .tools .icon:hover {
+      color: #00addb;
+    }
+
+    .widget > .widget-head .tools > .icon:hover {
+      color: #00addb;
+    }
+
+    /* VH Classes */
+    .vh-hero
+    {
+        background: transparent url(/assets/img/venturehive_banner.png) no-repeat 0% 0%;
+    }
+
+    .modal.colored-header .modal-content .modal-header, .md-modal.colored-header .modal-content .modal-header, .modal.colored-header .md-content .modal-header, .md-modal.colored-header .md-content .modal-header {
+        background-color: #00addb;
+        color:
+    }
+
+    .collapse, .navbar-collapse {
+        background-color: #00addb;
+    }
+
+    @media (max-width: 767px) {
+        .am-left-sidebar .am-logo {
+        background: url("/assets/img/smaller.png") no-repeat 15px center;
+      }
+    }
+
+    @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+      .am-left-sidebar .am-logo {
+        background-image: url("/assets/img/smaller.png");
+      }
+    }
+
+    .navbar-header {
+         background-color: #00addb;
+    }
+
+    .btn-link {
+      color: #2a2728;
+    }
+
+    .btn-primary {
+      background-color: #00addb;
+      border-color: #00addb;
+    }
+
+    /* BUTTONS PRIMARY */
+    .btn-primary {
+      border-color: #00addb;
+      background-color:#00addb;
+      border-color: #00addb;
+    }
+    .btn-primary:focus,
+    .btn-primary.focus {
+      background-color: #00addb;
+      border-color: #00addb;
+    }
+    .btn-primary:hover {
+      background-color: #00addb;
+      border-color: #00addb;
+    }
+    .btn-primary:active,
+    .btn-primary.active,
+    .open > .dropdown-toggle.btn-primary {
+      background-color: #00addb;
+      border-color: #00addb;
+    }
+    .btn-primary:active:hover,
+    .btn-primary.active:hover,
+    .open > .dropdown-toggle.btn-primary:hover,
+    .btn-primary:active:focus,
+    .btn-primary.active:focus,
+    .open > .dropdown-toggle.btn-primary:focus,
+    .btn-primary:active.focus,
+    .btn-primary.active.focus,
+    .open > .dropdown-toggle.btn-primary.focus {
+      background-color: #00addb;
+      border-color: #00addb;
+    }
+    .btn-primary.disabled,
+    .btn-primary[disabled],
+    fieldset[disabled] .btn-primary,
+    .btn-primary.disabled:hover,
+    .btn-primary[disabled]:hover,
+    fieldset[disabled] .btn-primary:hover,
+    .btn-primary.disabled:focus,
+    .btn-primary[disabled]:focus,
+    fieldset[disabled] .btn-primary:focus,
+    .btn-primary.disabled.focus,
+    .btn-primary[disabled].focus,
+    fieldset[disabled] .btn-primary.focus,
+    .btn-primary.disabled:active,
+    .btn-primary[disabled]:active,
+    fieldset[disabled] .btn-primary:active,
+    .btn-primary.disabled.active,
+    .btn-primary[disabled].active,
+    fieldset[disabled] .btn-primary.active {
+      background-color: #00addb;
+      border-color: #00addb;
+    }
+    .btn-primary .badge {
+      color: #00addb;
+      background-color: #ffffff;
+    }
+    .btn-primary:focus,
+    .btn-primary.focus {
+      background-color: #00addb;
+      border-color: #00addb;
+    }
+    .btn-primary:hover {
+      background-color: #00addb;
+      border-color: #00addb;
+    }
+    .btn-primary:active,
+    .btn-primary.active,
+    .open > .dropdown-toggle.btn-primary {
+      background-color: #00addb;
+      border-color: #00addb;
+    }
+    .btn-primary:active:hover,
+    .btn-primary.active:hover,
+    .open > .dropdown-toggle.btn-primary:hover,
+    .btn-primary:active:focus,
+    .btn-primary.active:focus,
+    .open > .dropdown-toggle.btn-primary:focus,
+    .btn-primary:active.focus,
+    .btn-primary.active.focus,
+    .open > .dropdown-toggle.btn-primary.focus {
+      background-color: #00addb;
+      border-color: #00addb;
+    }
+    .btn-primary.disabled,
+    .btn-primary[disabled],
+    fieldset[disabled] .btn-primary,
+    .btn-primary.disabled:hover,
+    .btn-primary[disabled]:hover,
+    fieldset[disabled] .btn-primary:hover,
+    .btn-primary.disabled:focus,
+    .btn-primary[disabled]:focus,
+    fieldset[disabled] .btn-primary:focus,
+    .btn-primary.disabled.focus,
+    .btn-primary[disabled].focus,
+    fieldset[disabled] .btn-primary.focus,
+    .btn-primary.disabled:active,
+    .btn-primary[disabled]:active,
+    fieldset[disabled] .btn-primary:active,
+    .btn-primary.disabled.active,
+    .btn-primary[disabled].active,
+    fieldset[disabled] .btn-primary.active {
+      background-color: #00addb;
+      border-color: #00addb;
+    }
+    .btn-primary .badge {
+      color: #00addb;
+      background-color: #ffffff;
+    }
+
+    .bg-primary {
+      background-color: #2a2728;
+    }
+    a.bg-primary:hover,
+    a.bg-primary:focus {
+      background-color: #00addb;
+    }
+    .dropdown-menu > .active > a,
+    .dropdown-menu > .active > a:hover,
+    .dropdown-menu > .active > a:focus {
+      background-color: #2a2728;
+    }
+    .nav .open > a,
+    .nav .open > a:hover,
+    .nav .open > a:focus {
+      background-color: #ffffff;
+      border-color: #2a2728;
+    }
+    .nav-pills > li.active > a,
+    .nav-pills > li.active > a:hover,
+    .nav-pills > li.active > a:focus {
+      color: #ffffff;
+      background-color: #2a2728;
+    }
+    .navbar-default {
+      background-color: #2a2728;
+      border-color: #2a2728;
+    }
+
+    /* Tabs */
+    .nav-tabs > li a:hover {
+        background: transparent;
+        color: #00addb;
+    }
+
+    /* Pagination */
+    .currentStep {
+        color: #ffffff;
+        background-color: #00addb;
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 53.25%;
+        padding-top: 30px; height: 0; overflow: hidden;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<!-- end: CSS -->
+
+<!-- start: JavaScript-->
+<script type="text/javascript" async="" src="assets/js/ga.js"></script>
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+
+<script src="assets/js/modernizr.custom.js"></script>
+<script src="assets/js/jquery.flexslider.js"></script>
+<script src="assets/js/jquery.cslider.js"></script>
+<script src="assets/js/vh.js"></script>
+
+<script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+    var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-47827522-4"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+    //--><!]]>
+</script>
+<!-- end: JavaScript-->
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top am-top-header">
+    <div class="container-fluid vh-header">
+
+        <!-- Navbar Header -->
+        <div class="navbar-header">
+
+            <!-- Page title - visible on mobile -->
+            <div class="page-title" style="display: inline-block;">
+                <a href="/"><span><img src="assets/img/smaller.png" alt="logo" width="229px" class="logo-img"></span></a>
+            </div>
+
+            <!-- Brand Logo, 80 by 80 please -->
+            <a href="/" class="navbar-brand">
+                <img src="assets/img/vh-badge.png" height="80px" width="80px" style="margin-left: -.4em;">
+            </a>
+        </div>
+
+        <!-- Navbar collapse toggle button - visible on mobile -->
+        <a href="#" data-toggle="collapse" data-target="#am-navbar-collapse" class="am-toggle-top-header-menu collapsed">
+            <img src="assets/img/angle-down.svg" id="" style="height:31px;" title="" class="icon icon-white">
+        </a>
+
+        <!-- Navbar collapse - This will be hidden by default on mobile -->
+        <div id="am-navbar-collapse" class="collapse navbar-collapse">
+
+            <div class="nav navbar-nav am-nav-right">
+                <!-- APPLY -->
+                <li><a href="https://apply.venturehive.com/miami" target="_blank">Apply Now</a></li>
+
+                <!-- EVENTS -->
+                <li><a href="http://miami.venturehive.com/events">Events</a></li>
+
+                <!-- DIRECTORY -->
+                <li><a href="http://miami.venturehive.com/directory">Directory</a></li>
+
+                <!-- CONTACT -->
+                <li><a href="http://miami.venturehive.com/contact">Contact us</a></li>
+
+                <!-- LOGIN -->
+                <li><a href="http://miami.venturehive.com/login">Login</a></li>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<link rel="stylesheet" type="text/css" href="assets/css/vh-slider.css" media="screen">
+<link type="text/css" id="base-style" href="assets/css/style-slider.css" rel="stylesheet">
+
+<style>
+    .da-dots {
+        display:none;
+    }
+</style>
+
+<div id="da-slider" class="da-slider da-slider-fb" style="height:350px;background:linear-gradient(rgba(0, 54, 103, 0.6), rgba(0, 54, 103, 0.6)), url(&#39;https://miami.venturehive.com/assets/img/vh/venturehive_banner.png&#39;) repeat 0% 0%;">
+	<div class="da-slide da-slide-current jumbo">
+        <h2>Join us for our Fall 2016 Accelerator Program</h2>
+        <p>
+            Twelve weeks starting September 12th. Venture Hive focuses on building individuals who can lead and execute with a global mindset.
+        </p>
+        <a href="https://apply.venturehive.com/miami" class="da-link"  target="_blank" style="background-color:#ff4500;">Apply Now!</a>
+	</div>
+
+    <nav class="da-dots"><span class="da-dots-current"></span></nav>
+</div>
+
+<script type="text/javascript">
+    $(function() {
+        $('#da-slider').cslider({
+            autoplay	: false
+            /*bgincrement	: 450*/
+        });
+    });
+</script>
+
+<!-- /#Header -->
+
+<!-- Start Center -->
+<div id="wrapper">
+	<div class="container-fluid">
+		<div class="row">
+			<!-- Center Content -->
+			<div id="first-time">
+
+<style>
+
+@media screen and (min-width: 320px)
+{
+    .intro {
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .header{
+      padding: 40px 40px 1px 40px;
+    }
+
+    .header h1{
+      font-weight: 500;
+    }
+
+    .icon-box {
+      padding: 50px 80px;
+      background-color: #ffffff;
+    }
+
+    .btn-apply {
+      width: 46%;
+      margin-top:10px;
+      padding:10px;
+    }
+
+    .btn-apply a {
+      color: #fff;
+    }
+
+    .btn-apply a:visited {
+      color: #ffffff;
+    }
+
+    .ventures {
+      padding: 50px 70px;
+    }
+
+    .ventures h2 {
+      font-weight: 500;
+    }
+
+    .features{
+      padding: 15px;
+      background-color: #ffffff;
+    }
+
+    .features h2 {
+      color:#00ADDB;
+      text-align: center;
+    }
+
+    .features ul>li {
+      padding-bottom: 8px;
+    }
+
+    .features ol{
+      list-style-type: circle;
+    }
+
+    .weekly{
+      padding: 0 10px;
+    }
+
+    .weekly img {
+      margin: 0 auto;
+      display: block;
+    }
+
+    .weekly p {
+      text-align: center;
+    }
+
+    .weeks {
+      padding: 10px 0;
+      text-align: left;
+    }
+
+    .weeks li {
+      list-style-type: none;
+    }
+
+    .pricing {
+      padding: 0 10px;
+    }
+
+    .learn {
+      background-color:white;
+      text-align: center;
+      padding:10px;
+    }
+
+    .learn p {
+      padding:10px 10px;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    .intro {
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .header{
+        padding: 40px 40px 1px 40px;
+    }
+
+    .header h1{
+      font-weight: 500;
+    }
+
+    .icon-box {
+      padding: 50px 80px;
+      background-color: #ffffff;
+    }
+
+    .btn-apply {
+      width: 19%;
+      margin-top:10px;
+      padding:10px;
+    }
+
+    .btn-apply a {
+        color: #fff;
+    }
+
+    .btn-apply a:visited {
+        color: #ffffff;
+    }
+
+    .ventures {
+      padding: 50px 70px;
+    }
+
+    .ventures h2 {
+      font-weight: 500;
+    }
+
+    .features{
+      padding: 70px;
+      background-color: #ffffff;
+    }
+
+    .features h2 {
+      color:#00ADDB;
+      text-align: center;
+    }
+
+    .features ul>li {
+      padding-bottom: 8px;
+    }
+
+    .features ol{
+      list-style-type: circle;
+    }
+
+    .weekly{
+      padding: 0 100px;
+    }
+
+    .weekly img {
+      margin: 0 auto;
+      display: block;
+    }
+
+    .weekly p {
+      text-align: center;
+    }
+
+    .weeks {
+      padding: 10px 0;
+      text-align: left;
+    }
+
+    .weeks li {
+      list-style-type: none;
+    }
+
+    .pricing {
+      padding: 0 100px;
+    }
+
+    .learn {
+      padding:50px;
+    }
+
+    .learn p {
+      padding:10px 150px;
+    }
+}
+</style>
+
+<div class="col-sm-12 intro">
+  <div class="header">
+    <h1>What Will You Learn at Venture Hive?</h1>
+    <p>The Venture Hive Fall Accelerator is a part-time program to take your concept or business to the next level. It runs for twelve weeks from Monday, September 12 - Thursday, December 2, 2016. We have two offerings to accommodate companies at different stages:</p>
+  </div>
+</div>
+
+<div class="row text-center icon-box">
+  <div class="col-md-12">
+    <!-- start: Icon Box Start -->
+      <div class="row">
+            <div class="col-md-4 col-md-offset-2">
+              <div class="panel-default">
+                  <div class="panel-head" style="color:#00ADDB;">
+                      <img src="assets/img/light.svg"  width="120" height="120">
+                  </div>
+                  <div class="panel-body">
+                    <h3>Idea to MVP (Pre-revenue)</h3>
+                    <br>
+                        <p>Perfect for people who aren’t ready to leave their day job yet and want a crash course on how to turn an idea into a minimum viable product (MVP). </p>
+                        <p>You will build out your concept, assess feasibility, develop a strategic plan, and refine a deck to tell your story. You’ll validate your concept with customers, begin to build a data driven business, and ensure that you can execute on your vision. Individuals may participate in this program as a single founder.
+                        </p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel-default">
+                  <div class="panel-head" style="color:#00ADDB;">
+                      <img src="assets/img/space.svg" width="120" height="120">
+                  </div>
+                  <div class="panel-body">
+                      <h3>Startup to Sustainable Business (Pre-revenue to $3M in revenue)</h3>
+                      <br>
+                          <p>You and your team will develop the structure and process needed to make the transition where most startups fail. Every aspect of your current business will be reviewed to help you focus and scale. </p>
+                      <p>Teams need to develop at a faster rate than their businesses in order to successfully make the transition from startup to scale up. Only teams may participate in this program (minimum two participants).</p>
+                  </div>
+                </div>
+            </div>
+      </div>
+       <a class="btn btn-primary center-block btn-apply" href="https://apply.venturehive.com/miami"  target="_blank" role="button">Apply Now</a>
+    <!-- end: Icon Box-->   
+  </div>
+</div>
+
+<div class="row text-center ventures">
+  <div class="col-md-12">
+      <div class="panel-default" style="padding-top:20px;">
+          <div class="panel-head">
+              <h2>Here's What Our Participants Have to Say</h2>
+          </div>
+          <br>
+          <div class="video-container ">
+              <iframe src="https://player.vimeo.com/video/125806082?title=0&amp;byline=0&amp;portrait=0" width="760" height="515" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- end: Mid-Section -->
+
+<div class="row features">
+  <div class="col-md-12">
+      <div class="col-xs-12">
+        <div class="panel-default">
+            <div class="panel-head">
+                <h2>What It Takes</h2>
+            </div>
+            <div class="panel-body">
+                <p>Plan on an investment of 15-20 hours per week in yourself and your team when applying for either of these programs. Week one will include a 4-hour time commitment for orientation and expect 2-3 hours per week of scheduled mentoring or group sessions. We’ll end with our “Swarm” demo day in week 12, where you’ll pitch to a room full of investors and potential partners.</p>
+
+                <p>We can ensure complete confidentiality to those participants who are currently employed and are seeking to assess an opportunity before making the leap!</p>
+                <p>This is a paid program, and we do not take any equity—so you can retain complete control as you grow your business!</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12">
+        <div class="panel-default">
+            <div class="panel-head">
+                <h2>What We Offer</h2>
+            </div>
+            <div class="panel-body">
+
+                <div class="col-md-6"> 
+                  <ul>
+                      <li>12-week mini-MBA focused on your business using our proven curriculum for entrepreneurs</li>
+                      <li>Weekly one-on-one mentoring sessions that provide accountability, goal setting, and suggestions from someone who’s been there—this is where the magic happens</li>
+                      <li>Weekly stand-up meetings with other startups</li>
+                      <li>Free consultation with lawyers, accountants, and other specialists</li>
+                        <li>Plug into our growing network of talented entrepreneurs, mentors, and investors</li>
+                  </ul>
+                </div>
+
+                <div class="col-md-6"> 
+                  <ul>
+                      <li>Speakers with real-world experience who are experts at what they do and can help you get where you’re going </li>
+                      <li>We’ll help you refine your business model</li>
+                      <li>We’ll get your pitch deck to sing</li>
+                      <li>Our “Swarm” demo day will put you in front of investors and influencers in the Miami business community</li>
+                  </ul>
+                </div>
+
+            </div>
+              <a class="btn btn-primary center-block btn-apply" href="https://apply.venturehive.com/miami" target="_blank" role="button">Apply Now</a>
+        </div>
+      </div>
+
+  </div>
+</div>
+<!-- end: Features -->
+
+<!-- start: about -->
+<div class="row about text-center">
+  <div class="col-xs-12" style="padding:40px;">
+    <div class="panel-default">
+        <div class="panel-head">
+            <h2>About Venture Hive</h2>
+        </div>
+        <div class="panel-body container">
+           <p>Venture Hive was created as an effort to develop top talent in South Florida. We host more than 30 domestic and international companies with dozens of world-class technologists and business professionals under one roof. While we are supporting (and often importing) incredible entrepreneurs, we want to also help shape the next generation of emerging companies! </p>
+           <p>Come join us – support Miami’s tech scene while being a part of shaping the future for some of the top startups in the world.</p>
+
+            <!-- Begin MailChimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+            <style type="text/css">
+                #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+                /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+            </style>
+
+          <form  method='post' action="//venturehive.us7.list-manage.com/subscribe/post?u=a52b7dd7b77cb8deb3ee5520e&amp;id=5962d4d264"  id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="padding:30px 0;">
+            <div class="form-group">
+                <p><label for="mce-EMAIL">Write us your email address</label></p>
+                <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Your email address"><button type="submit" class="btn btn-default" style="padding: 11px; margin-top:-4px;">Stay informed</button>
+            </div>
+            <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_a52b7dd7b77cb8deb3ee5520e_5962d4d264" tabindex="-1" value="">
+            </div>
+          </form>
+
+          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- end: -->
+
+<!-- start: weekly -->
+<div class="row features" style="background-color:#fff; padding:40px;">
+  <div class="col-md-12">
+    <div class="col-xs-12">
+      <div class="panel-default weekly">
+            <div class="panel-head center-block">
+                <img src="assets/img/calendar.svg" width="120" height="120">
+                <h2>Weekly Schedule</h2>
+            </div>
+            <div class="panel-body">
+                <p>Weekly mentoring session: We’ll use your first mentoring session to map out your OKRs (objectives and key results) for the next three months. These cover your goals and the metrics you’ll use to measure your progress. </p>
+                <p>Each week’s curriculum will focus on a particular aspect of your startup. Here’s an outline we’ve used in the past: </p>
+
+                <div class="col-md-4">
+                  <ul class="weeks">
+                      <li><strong>Week 1:</strong> Orientation </li>
+                      <li><strong>Week 2: </strong>Finance </li>
+                      <li><strong>Week 3:</strong>Product and Pricing </li>
+                      <li><strong> Week 4:</strong> Sales and Strategic Partnerships </li>
+                  </ul>
+                </div>
+
+                 <div class="col-md-4">
+                  <ul class="weeks">
+                      <li><strong> Week 5:</strong>  Key Performance Indicators </li>
+                      <li><strong> Week 6: </strong>Digital Marketing  </li>
+                      <li><strong>Week 7: </strong>Legal & Intellectual Property </li>
+                      <li><strong> Week 8: </strong>Culture & Human Resources </li>
+                  </ul>
+                </div>
+
+                 <div class="col-md-4">
+                  <ul class="weeks">
+                      <li><strong> Week 9: </strong>Marketing</li>
+                      <li><strong>Week 10: </strong>Executive Development </li>
+                      <li><strong> Week 11: </strong> Public Relations </li>
+                      <li><strong> Week 12: </strong>Funding Strategy </li>
+                  </ul>
+                </div>
+
+                <div class="col-md-12">
+                    <p>Bi-weekly pitch practice Sessions (six times throughout the program)</p>
+                    <p>Bi-weekly office hours with attorneys and accountants</p>
+                    <p>There will be various speakers and presentations during the program </p>
+                </div>
+
+            </div>
+          </div>  
+    </div>
+  </div>
+</div>  
+</div>
+<!-- end -->
+
+<!-- start: Details and Pricing -->
+<div class="row" style="padding:40px;">
+  <div class="col-md-12">
+    <div class="col-xs-12 pricing">
+        <div class="panel-default text-center">
+            <div class="panel-head" style="text-align:center; padding-bottom:10px;">
+                <img src="assets/img/pricing.svg" width="120" height="120">
+                <h2>Details and Pricing</h2>
+            </div>
+            <div class="panel-body">
+                <p>All applications for the Fall 2016 Accelerator Program are due by midnight on Sunday, September 4th. </p>
+                <p><strong>Virtual Accelerator</strong></p>
+                <p>Learn remotely using our library of world-class online content. If you’re in the Miami area you’re welcome to join us at our offices for weekly mentoring sessions and standup meetings. Selected companies can either pay $5,000 up front or $1,800/month for all benefits. </p>
+                
+                <p><strong>Work from Our Offices</strong></p>
+                <p>We invite you to move in! You’ll be in the middle of the infectious energy of our startups. We provide an amazing space to network and grow. Our facility at 1010 NE 2nd Ave. in Downtown Miami is accessible easily by bus, Miami Trolley, and the "Eleventh Street" Metromover station right outside our door. Selected companies can pay in advance for all twelve weeks: $1,500 one-time payment for a shared workspace or $3,000 one-time for a private office. This is in addition to the fee for the Virtual Accelerator. </p>
+
+                <p>After the program, the monthly rate for access to non-private dedicated space is $500/month for the first person plus $250/month per additional person, or $1,250/month for a private office for up to four people. These prices include bi-weekly mentoring and other benefits.</p>
+            </div>
+             <a class="btn btn-primary center-block btn-apply" href="https://apply.venturehive.com/miami" target="_blank" role="button">Apply Now</a>
+          </div>  
+      </div>
+  </div>
+</div>  
+
+<!-- end -->
+
+<!-- start: who's behind the program? -->
+
+<div class="col-sm-12 learn">
+  <div class="header">
+    <h1>What Will You Learn at Venture Hive?</h1>
+    <p>The Venture Hive Fall Accelerator is a part-time program to take your concept or business to the next level. It runs for twelve weeks from Monday, September 12 - Thursday, December 2, 2016. We have two offerings to accommodate companies at different stages:</p>
+  </div>
+</div>
+
+            <div class="row text-center icon-box">
+  <div class="col-md-12">
+    <!-- start: Icon Box Start -->
+      <div class="row">
+            <div class="col-sm-6">
+              <div class="panel-default">
+                  <div class="panel-head" style="color:#00ADDB;">
+                        <img src="assets/img/susan1.png">
+                        <h3>Dr. Susan Amat</h3>
+                  </div>
+                  <div class="panel-body"  style="text-align:left">
+                    <p>A serial entrepreneur, Dr. Amat built businesses in the entertainment industry for over a decade, including the first CD-ROM magazine and a national television show. After completing her MBA, Dr. Amat developed pediatric health monitoring products and earned a Ph.D. in Strategic Entrepreneurship (coursework in industrial engineering, business, and education). </p>
+                    <p>While teaching at the University of Miami, she founded The Launch Pad, which was considered the top model in entrepreneurship education. Her program and platform was replicated throughout the United States as Blackstone LaunchPads. </p>
+                    <p>Dr. Amat served as the founding Chair of the STEM Board for Miami-Dade County Public Schools and actively speaks about entrepreneurship education internationally. She has consulted with the US State Department, The Kauffman Foudation, and the World Bank on ecosystem development. In 2012, Dr. Amat was honored as a 'Champion of Change' at the White House.</p>
+                  </div>
+              </div>    
+            </div>
+            <div class="col-sm-6">
+                <div class="panel-default">
+                  <div class="panel-head" style="color:#00ADDB;">
+                        <img src="assets/img/mikel.png">
+                          <h3>Mike Lingle</h3>
+                  </div>
+                  <div class="panel-body" style="text-align:left">
+                      <p>Mike Lingle is an experienced entrepreneur who’s passionate about helping companies grow. He’s also a recent transplant to Miami after 20 years in NYC. He has built companies, raised money, managed software projects, written code, and landed customers including HBO, Disney, Western Union, Sony, AT&T, PwC, and Ferrari. </p>
+                      <p>Mike is an optimizer, and spends most of his time helping founders figure out how to make their businesses succeed. Prior to his mentoring role, Mike helped launch several companies including SlideRocket, a cloud-based platform for creating and managing presentations that secured $7 million from VCs and was acquired by VMWare in 2011.</p>
+                  </div>
+                </div>
+            </div>
+      </div>
+    <!-- end: Icon Box-->   
+  </div>
+</div>
+<!-- end -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- /#Start Center -->
+
+<!-- LRA: We had to add the core JS file in the head section for Ajax to work on page load -->
+<!--      The rest of the javascript libs are listed below                                  -->
+<script src="assets/js/jquery.nanoscroller.min.js" type="text/javascript"></script>
+<script src="assets/js/main.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/curvedLines.js" type="text/javascript"></script>
+<script src="assets/js/jquery-ui.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/js/jsapi"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        //initialize the javascript
+        App.init();
+    });
+</script>
+
+<!-- TODO: Put this copyright footer in a GSP -->
+<div class="text-center" style="padding-top:20px;padding-bottom:20px;">
+© 2016 Venture Hive® LLC
+</div>
+
+    <div class="am-scroll-top" style="display: none;"></div>
+</body>
+</html>
