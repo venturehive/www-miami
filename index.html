@@ -15,7 +15,6 @@
 
 <link rel="shortcut icon" href="/assets/img/vh-favicon.png">
 
-<!--  TODO i18n. Add to resources -->
 <title>Venture Hive Miami</title>
 
 <!-- start: CSS -->
@@ -23,7 +22,7 @@
 <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
 
 <!-- start: Amaretti Dashboard CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/lib/stroke-7/style.css"/>
+<link rel="stylesheet" type="text/css" href="assets/lib/stroke-7/style.css"/>
 <link rel="stylesheet" type="text/css" href="assets/css/nanoscroller.css">
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -306,11 +305,15 @@
 
     .video-container {
         position: relative;
-        padding-bottom: 53.25%;
-        padding-top: 30px; height: 0; overflow: hidden;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
     }
 
-    .video-container iframe {
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
         position: absolute;
         top: 0;
         left: 0;
@@ -409,7 +412,6 @@
     $(function() {
         $('#da-slider').cslider({
             autoplay	: false
-            /*bgincrement	: 450*/
         });
     });
 </script>
@@ -663,17 +665,21 @@
 </div>
 
 <div class="row text-center ventures">
-  <div class="col-md-12">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
       <div class="panel-default" style="padding-top:20px;">
           <div class="panel-head">
               <h2>Here's What Our Participants Have to Say</h2>
           </div>
           <br>
-          <div class="video-container ">
-              <iframe src="https://player.vimeo.com/video/125806082?title=0&amp;byline=0&amp;portrait=0" width="760" height="515" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <div class="video-wrapper">
+              <div class="video-container">
+                  <iframe src="https://player.vimeo.com/video/169942573?title=0&byline=0&portrait=0" width="800" height="450" frameborder="0"></iframe>
+              </div>
           </div>
       </div>
   </div>
+  <div class="col-md-2"></div>
 </div>
 <!-- end: Mid-Section -->
 
@@ -743,7 +749,7 @@
             <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
             <style type="text/css">
                 #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-                /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                /* TODO: Add your own MailChimp form style overrides in your site stylesheet or in this style block.
                    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
             </style>
 
@@ -858,7 +864,7 @@
   </div>
 </div>
 
-            <div class="row text-center icon-box">
+<div class="row text-center icon-box">
   <div class="col-md-12">
     <!-- start: Icon Box Start -->
       <div class="row">
