@@ -5,7 +5,7 @@
     position: relative;
     margin: 80px auto;
     margin-bottom: 0px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     background: transparent url(../images/waves.gif) repeat 0% 0%;
     /*
     border-top: 8px solid #efc34a;
